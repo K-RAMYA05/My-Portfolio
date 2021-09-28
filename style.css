@@ -1,0 +1,416 @@
+@import 'utilities.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    min-width: 700px;
+    height: auto;
+    
+    
+    
+}
+*{
+    padding :0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+
+}
+header{
+    background-color: var(--dark);
+    height:800px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87% ,0 100%);
+    
+
+}
+.container{
+    max-width: 1100px;
+    padding: 0 15px;
+    margin: 0 auto;
+    
+}
+header nav .left a{
+
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    transition: all 0.3s ease;
+}
+header nav .left a:hover{
+    color:var(--primary);
+}
+header nav {
+    padding: 2rem 0;
+}
+header nav .brand{
+    margin-right: 3rem;
+}
+.me{
+    padding: 3rem 0;
+}
+.me .left img{
+    width: 400px;
+} 
+.me .right{
+     color: var(--pure);
+}
+.me .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+p{
+    margin-bottom: 2rem;
+
+}
+.me .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.me .right{
+    margin-top: -2rem;
+}
+span{
+    color: var(--primary);
+}
+.name{
+    filter: grayscale(100%);
+    border-radius: 50%;
+    
+}
+section{
+    padding: 4rem 0;
+}
+section .about h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;     
+}
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+
+}
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color:var(--ternary);
+    line-height: 1.9rem;
+    margin-bottom: 3rem;
+
+}
+section.about .social a{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    background-color: var(--dark);
+    transition:all 0.3s ease;
+}
+
+.section-heading{
+  color:var(--secondary)  ;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 0.5;
+}
+
+
+.section-heading + p
+{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+
+}
+section.skills{
+    background-color: var(--light);
+}
+
+section.skills .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap:8rem;
+}
+section.skills .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 4rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+section.skills .card-wrapper .card img{
+    position:absolute;
+    top:-3rem;
+    left:50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+}
+section.skills .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+
+}
+section.skills .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color:var(--ternary);
+    line-height: 1.6;
+}
+
+section.skills .card-wrapper .card:hover h2,section.skills .card-wrapper .card:hover p{
+    color: var(--pure);
+
+}
+section.skills .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section.experiences{
+    text-align: center;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(back.PNG);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80% ,0 100%);
+    padding-bottom: 12rem;
+
+}
+section.experiences h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    
+}
+section.education{
+    text-align: center;
+    margin-bottom: 1rem;
+    
+    
+    
+}
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    background-color: gray;
+  }
+  
+  .timeline ul {
+    list-style: none;
+  }
+  .timeline ul li {
+    padding: 20px;
+    background-color: #1e1f22;
+    color: var(--pure);
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 20px;
+  }
+  .timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .timeline-content h3{
+      color: var(--dark);
+  }
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .timeline-content .date {
+    font-size: 12px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  @media only screen and (min-width: 870px) {
+    .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: gray;
+      
+    }
+    .timeline ul li {
+      width: 50%;
+      position: relative;
+      margin-bottom: auto;
+    }
+    .timeline ul li:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-30px);
+      border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(30px);
+      border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li::before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: gray;
+      top: 0px;
+    }
+    .timeline ul li:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -30px;
+    }
+    .timeline ul li:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -30px;
+    }
+    .timeline-content .date {
+      position: absolute;
+      top: -30px;
+    }
+    .timeline ul li:hover::before {
+      background-color: aqua;
+    }
+    section.education{
+      padding-bottom: 800px;
+    }
+  }
+  section.contact{
+      background: var(--light);
+      
+  }
+
+  section.contact .card-wrapper{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap:3rem;
+      
+  }
+  section.contact .card-wrapper .card{
+      text-align: center;
+  }
+
+  section.contact .card-wrapper .card img{
+      margin-bottom:2rem ;
+  }
+  section.contact .card-wrapper .card h1{
+      font-weight: 400;
+      margin-bottom: 1rem;
+
+  }
+  section.contact .card-wrapper .card h6{
+      font-size: 1rem;
+      color:var(--ternary);
+      font-weight: 400;
+      margin-bottom: 4rem;
+  }
+  section.contact .input-wrap{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-gap:2rem;
+      margin-bottom: 2rem;
+  }
+  section.contact .input-wrap-2{
+      display: flex;
+      flex-direction: column;
+  }
+  section.contact .input-wrap-2 input{
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+
+  }
+  section.contact .input-wrap-2 textarea{
+      padding:0.5rem;
+     
+
+  }
+  section.contact .input-wrap-2 textarea:focus{
+      outline: none;
+  }
+  section.contact input{
+      padding:0.5rem;
+      border:1px solid var(--light);
+      font-size: 0.9rem;
+  }
+  section.contact input:focus{
+      outline:none;
+  }
+  textarea{
+      font-family: 'loca',sans-serif;
+      font-size:0.9rem;
+  }
+  section.contact .btn-wrapper{
+      text-align: center;
+      margin-top: 2rem;
+  }
+  .social{
+      text-align: center;
+      background-color: var(--dark);
+  }
+
+  .footer{
+    background-color: var(--dark);
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    padding: 2rem 0;
+  }
+  .footer__title{
+    font-size: 2rem;
+    margin-bottom: 4px;
+  }
+  .footer__social{
+    margin-bottom: 4px;
+  }
+  .footer__icon{
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 2px;
+  }
+  .social .icon {
+    display: none;
+  }
+  @media screen and (max-width: 900px) {
+    .social a:not(:first-child) {display: none;}
+    .social a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .social.responsive {position: relative;}
+    .social.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .social.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
